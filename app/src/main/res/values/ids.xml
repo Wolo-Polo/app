@@ -6,6 +6,10 @@
     <item name="edtUsername" type="id"/>
     <item name="edtPassword" type="id"/>
 
+    <!-- Home layout-->
+    <item name="btnCalculatorAction" type="id"/>
+    <item name="btnPhoneBook" type="id"/>
+
     <!-- Calculator layout-->
     <item name="edtExpression" type="id"/>
     <item name="tvResult" type="id"/>
@@ -27,4 +31,22 @@
     <item name="btnCalculator" type="id"/>
     <item name="btnC" type="id"/>
     <item name="btnAC" type="id"/>
+
+    <!--Phone book layout-->
+    <item name="edtName" type="id"/>
+    <item name="edtPhoneNumber" type="id"/>
+    <item name="rbtnMale" type="id"/>
+    <item name="rbtnFemale" type="id"/>
+    <item name="btnSave" type="id"/>
+    <item name="lvContacts" type="id"/>
+
+    <!-- Item list contact-->
+    <item name="ivAvatar" type="id"/>
+    <item name="tvName" type="id"/>
+    <item name="tvPhoneNumber" type="id"/>
+
+    <!-- Custom dialog-->
+    <item name="tvConfirm" type="id"/>
+    <item name="btnCall" type="id"/>
+    <item name="btnSendMessage" type="id"/>
 </resources>

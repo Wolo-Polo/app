@@ -151,10 +151,10 @@ public class CalculatorActivity extends AppCompatActivity implements View.OnClic
                 edtExpression.append("/");
                 break;
             case R.id.btnC:
-                String expression = deleteCharacter(edtExpression.getText().toString());
-                edtExpression.setText(expression);
-//                BaseInputConnection baseInputConnection = new BaseInputConnection(edtExpression, true);
-//                baseInputConnection.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_DEL));
+//                String expression = deleteCharacter(edtExpression.getText().toString());
+//                edtExpression.setText(expression);
+                BaseInputConnection baseInputConnection = new BaseInputConnection(edtExpression, true);
+                baseInputConnection.sendKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_DEL));
                 break;
             case R.id.btnAC:
                 edtExpression.setText("");

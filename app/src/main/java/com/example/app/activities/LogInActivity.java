@@ -27,7 +27,7 @@ public class LogInActivity extends AppCompatActivity{
 //        requestWindowFeature(Window.FEATURE_NO_TITLE);
 //        this.getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         tvForgotPassword = findViewById(R.id.tvForgotPassword);
         tvForgotPassword.setText(Html.fromHtml("<u>Forgot password?</u>"));
 
@@ -40,8 +40,9 @@ public class LogInActivity extends AppCompatActivity{
                 String username = edtUsername.getText().toString();
                 String password = edtPassword.getText().toString();
 
-                if(username.equals("TruongDzai") && password.equals("1234")){
-                    Intent intent = new Intent(LogInActivity.this, CalculatorActivity.class);
+                //if(username.equals("TruongDzai") && password.equals("1234")){
+                if(!username.equals("") && !password.equals("")){
+                    Intent intent = new Intent(LogInActivity.this, HomeActivity.class);
                     startActivity(intent);
                 }else{
                     Toast.makeText(LogInActivity.this, "Login fail!" + password, Toast.LENGTH_LONG).show();
